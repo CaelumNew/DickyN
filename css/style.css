@@ -14,11 +14,15 @@
 
 :root {
 
-    --bg-color : #1f2325;
-    --second-bg-color : #191d1f;    
-    --text-color : #ededed;
-    --main-color : #03f8c3;
+    --primary-color : #edf2fc;
+    --secondary-color : #212121;    
+    --main-color : #F99417;
+    
+}
 
+.darkmode {
+--primary-color : #212121;
+--secondary-color : #fff;    
 }
 
 html{
@@ -29,8 +33,8 @@ html{
 
 body{
 
-    background: var(--bg-color);
-    color: var(--bg-color);
+    background: var(--primary-color);
+    color: var(--primary-color);
         
 }
 
@@ -49,23 +53,25 @@ body{
 }
 
 .header.sticky {
-    background: var(--bg-color);
+    background: var(--primary-color);
 }
 
 .logo {
     position: relative;
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
 .navbar {
     position: relative;
+    text-align: right;
+    flex: 1;
 }
 
 .navbar a {
     font-size: 1.7rem;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
@@ -82,7 +88,7 @@ body{
 #menu-icon {
     position: relative;
     font-size: 3.6rem;
-    color: var(--text-color);
+    color: var(--secondary-color);
     cursor: pointer;
     display: none;
 }
@@ -90,7 +96,7 @@ body{
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
-    color: var(--text-color);
+    color: var(--secondary-color);
 
 }
 
@@ -114,7 +120,7 @@ section {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 
@@ -187,7 +193,7 @@ section {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .1rem;
-    color: var(--bg-color);
+    color: var(--secondary-color);
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -205,7 +211,7 @@ section {
 }
 
 .btn-box .btn:nth-child(2):hover{
-    color: var(--bg-color);
+    color: var(--primary-color);
 }
 
 .btn-box .btn:nth-child(2)::before {
@@ -219,7 +225,7 @@ section {
     left: 0;
     width: 0%;
     height: 100%;
-    background: var(--bg-color);
+    background: var(--primary-color);
     z-index: -1;
     transition: .5s;
 }
@@ -253,7 +259,7 @@ section {
     transition: .5s;
 }
 .home-sci a:hover{
-    color: var(--bg-color);
+    color: var(--primary-color);
 
 }
 
@@ -285,7 +291,7 @@ section {
 }
 
 .home-imgHover:hover {
-    background: var(--bg-color);
+    background: var(--primary-color);
     opacity: .8;
 }
 
@@ -295,7 +301,7 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background: var(--primary-color);
     padding-bottom: 6rem;
 }
 
@@ -335,8 +341,8 @@ transform: translate(-50%, -50%) rotate(0);
 width: 100%;
 height: 100%;
 border-radius: 50%;
-border-top: .2rem solid var(--second-bg-color);
-border-bottom: .2rem solid var(--second-bg-color);
+border-top: .2rem solid var(--secondary-color);
+border-bottom: .2rem solid var(--secondary-color);
 border-left: .2rem solid var(--main-color);
 border-right: .2rem solid var(--main-color);
 animation: aboutSpinner 8s linear infinite;
@@ -364,7 +370,7 @@ animation: aboutSpinner 8s linear infinite;
 }
 
 .btn-box.btns a::before {
-    background: var(--second-bg-color);
+    background: var(--primary-color);
 
 }
 
@@ -436,7 +442,7 @@ animation: aboutSpinner 8s linear infinite;
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);
+    background: #ffffff;
     z-index: -1;
     transition: .5s;
 }
@@ -463,15 +469,16 @@ animation: aboutSpinner 8s linear infinite;
     font-size: 1.6rem;
     padding-top: .5rem;
 }
+
 .education-content .content ul {
     font-size: 1.6rem;
     padding-top: .5rem;
 }
-
+/*UNTUK SKILL*/
 .skills {
     min-height: auto;
     padding-bottom: 7rem;
-    background: var(--second-bg-color);
+    background: var(--primary-color);
 }
 
 .skills h2 {
@@ -522,7 +529,7 @@ animation: aboutSpinner 8s linear infinite;
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--bg-color);
+    background: var(--primary-color);
     z-index: -1;
     transition: .5s;
 }
@@ -544,7 +551,7 @@ width: 100%;
 }
 
 .skills-content .progress h3 span {
-    color: var(--text-color);
+    color: var(--secondary-color);
     
 }
 
@@ -652,7 +659,7 @@ width: 100%;
     height: 100%;
     padding: 1.5rem;
      font-size: 1.6rem;
-     color: var(--text-color);
+     color: var(--secondary-color);
      background: transparent;
      border-radius: .6rem;
     border: .2rem solid var(--main-color);
@@ -661,7 +668,7 @@ width: 100%;
 
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder {
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 .contact form .focus {
@@ -670,7 +677,7 @@ width: 100%;
     top: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);
+    background: var(--secondary-color);
     border-radius: .6rem;
     z-index: -1;
     transition: .5s;
@@ -706,8 +713,8 @@ cursor: pointer;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
-    color: var(--text-color);
+    background: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .footer-text p {
@@ -734,7 +741,7 @@ cursor: pointer;
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);
+    background: var(--secondary-color);
     z-index: -1;
     transition: .5s;
 }
@@ -745,7 +752,7 @@ cursor: pointer;
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--bg-color);
+    color: var(--primary-color);
     transition: .5s;
 }
 
@@ -760,7 +767,7 @@ cursor: pointer;
     right: 0;
     width: 100%;
     height: 100%;
-    background: var(--bg-color);
+    background: var(--primary-color);
     z-index: 98;
 }
 
@@ -784,7 +791,7 @@ cursor: pointer;
 }
 
 section:nth-child(odd) .animate.scroll {
-    background: var(--second-bg-color);
+    background: var(--primary-color);
 }
 
 .education .education-box .animate.scroll {
@@ -835,7 +842,7 @@ section:nth-child(odd) .animate.scroll {
 
 @media (max-width: 768px) {
     .header {
-        background: var(--bg-color);
+        background: var(--primary-color);
 
     }
 
@@ -868,7 +875,7 @@ section:nth-child(odd) .animate.scroll {
         left: -100%;
         width: 100%;
         height: 100%;
-        background: var(--bg-color);
+        background: var(--primary-color);
         border-top: .1rem solid rgba(0,0,0, .2);
         z-index: -1;
         transition: .25s ease;
@@ -896,7 +903,7 @@ section:nth-child(odd) .animate.scroll {
 
     .home-imgHover {
         pointer-events: none;
-        background-color: var(--bg-color);
+        background-color: var(--primary-color);
         opacity: .6;
     }
 
@@ -998,4 +1005,11 @@ section:nth-child(odd) .animate.scroll {
     100% {
         width: 0;
     }
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 5rem;
+    transform: scaleX(-1);
 }

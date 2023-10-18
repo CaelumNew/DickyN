@@ -48,3 +48,17 @@ window.onscroll = () => {
 
 
 }
+
+
+
+var icon = document.getElementById("icon");
+
+icon.onclick = function() {
+        document.body.classList.toggle("darkmode");
+        if(document.body.classList.contains("darkmode")){
+            icon.src = "icon/sun.png";
+        }
+        else{
+            icon.src = "icon/dark1.png";
+        }
+}
