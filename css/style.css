@@ -49,7 +49,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: .3s;
+    transition: 0,25s;
 }
 
 .header.sticky {
@@ -74,7 +74,7 @@ body{
     color: var(--secondary-color);
     font-weight: 500;
     margin-left: 3.5rem;
-    transition: .3s;
+    transition: 0,25s;
 
 }
 
@@ -196,7 +196,7 @@ section {
     color: var(--secondary-color);
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 0,25s;
 }
 
 .btn-box .btn:hover{
@@ -227,7 +227,7 @@ section {
     height: 100%;
     background: var(--primary-color);
     z-index: -1;
-    transition: .5s;
+    transition: 0,25s;
 }
 
 .btn-box .btn:hover::before {
@@ -256,7 +256,7 @@ section {
     color: var(--main-color);
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 0,25s;
 }
 .home-sci a:hover{
     color: var(--primary-color);
@@ -272,7 +272,7 @@ section {
     height: 100%;
     background: var(--main-color);
     z-index: -1;
-    transition: .5s;
+    transition: 0,25s;
 }
 
 .home-sci a:hover::before {
@@ -444,7 +444,7 @@ animation: aboutSpinner 8s linear infinite;
     height: 100%;
     background: #ffffff;
     z-index: -1;
-    transition: .5s;
+    transition: 0,25s;
 }
 
 .education-content .content:hover ::before {
@@ -531,7 +531,7 @@ animation: aboutSpinner 8s linear infinite;
     height: 100%;
     background: var(--primary-color);
     z-index: -1;
-    transition: .5s;
+    transition: 0,25s;
 }
 
 .skills-box .skills-content:hover::before{
@@ -680,7 +680,7 @@ width: 100%;
     background: var(--secondary-color);
     border-radius: .6rem;
     z-index: -1;
-    transition: .5s;
+    transition: 0,25s;
 
 }
 
@@ -743,7 +743,7 @@ cursor: pointer;
     height: 100%;
     background: var(--secondary-color);
     z-index: -1;
-    transition: .5s;
+    transition: 0,25s;
 }
 
 .footer-iconTop a:hover::before {
@@ -753,7 +753,7 @@ cursor: pointer;
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--primary-color);
-    transition: .5s;
+    transition: 0,25s;
 }
 
 .footer-iconTop a:hover i {
@@ -781,12 +781,12 @@ cursor: pointer;
 #menu-icon .animate,
 .home.show-animate .animate {
     animation: showRight 1s ease forwards;
-    animation-delay: calc(.3s * var(--i));
+    animation-delay: calc(0,25s * var(--i));
 }
 
 .animate.scroll {
     transition: 1s ease;
-    transition-delay: calc(.3s / var(--i));
+    transition-delay: calc(0,25s / var(--i));
     animation: none;
 }
 
@@ -803,7 +803,7 @@ section:nth-child(odd) .animate.scroll {
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll, 
 .contact.show-animate .animate.scroll {
-    transition-delay: calc(.3s * var(--i));
+    transition-delay: calc(0,25s * var(--i));
     width: 0;
 }
 
@@ -858,8 +858,8 @@ section:nth-child(odd) .animate.scroll {
         padding: 1rem 4%;
         background: rgba(2, 150, 118, 0.774);
         box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
-        transition: .25s ease;
-        transition-delay: .25s;
+        transition: 0,25s ease;
+        transition-delay: 0,25s;
         z-index: 1;
     }
 
@@ -878,13 +878,13 @@ section:nth-child(odd) .animate.scroll {
         background: var(--primary-color);
         border-top: .1rem solid rgba(0,0,0, .2);
         z-index: -1;
-        transition: .25s ease;
+        transition: 0,25s ease;
         transition-delay: 0s;
     }
 
     .navbar.active .active-nav {
         left: 0;
-        transition-delay: .25s;
+        transition-delay: 0,25s;
     }
 
     .navbar a {
@@ -892,13 +892,13 @@ section:nth-child(odd) .animate.scroll {
         font-size: 2rem;
         margin: 3rem 0;
         transform: translateX(-20rem);
-        transition: .25s ease;
+        transition: 0,25s ease;
         transition-delay: 0s;
     }
 
     .navbar.active a {
         transform: translateX(0);
-        transition-delay: .25s;
+        transition-delay: 0,25s;
     }
 
     .home-imgHover {
